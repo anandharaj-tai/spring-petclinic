@@ -190,7 +190,6 @@ class PetController {
 		if (existingPet != null) {
 			// Update existing pet's properties
 			existingPet.setName(pet.getName());
-			existingPet.setBirthDate(pet.getBirthDate());
 			existingPet.setType(pet.getType());
 		}
 		else {

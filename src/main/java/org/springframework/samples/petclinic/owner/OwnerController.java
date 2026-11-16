@@ -99,6 +99,7 @@ class OwnerController {
 		if (lastName == null) {
 			lastName = ""; // empty string signifies broadest possible search
 		}
+		lastName = lastName.trim(); // a pasted name may carry spaces
 
 		// find owners by last name
 		Page<Owner> ownersResults = findPaginatedForOwnersLastName(page, lastName);
